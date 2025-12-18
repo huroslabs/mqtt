@@ -11,7 +11,7 @@ sudo apt install mosquitto
 
 ```
 $ sudo systemctl enable mosquitto
-$sudo systemctl start mosquitto
+$ sudo systemctl start mosquitto
 $ sudo systemctl status mosquitto
 
 ```
@@ -46,13 +46,13 @@ sudo systemctl restart mosquitto
 pub 
 
 ```
-mosquitto_pub -h 3.16.151.209 -t sensor/data -m '{"temperature":35.5,"tds":204,"ph":6.5}'
+$ mosquitto_pub -h 3.16.151.209 -t sensor/data -m '{"temperature":35.5,"tds":204,"ph":6.5}'
 
 ```
 
 sub
 
 ```
-mosquitto_sub -h 3.16.151.209 -t sensor/data
+$ mosquitto_sub -h 3.16.151.209 -t sensor/data
 
 ```
